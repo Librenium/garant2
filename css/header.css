@@ -1,3 +1,6 @@
+.container {
+  width: 960px !important; }
+
 body {
   font-size: 15px;
   min-width: 320px;
@@ -94,8 +97,6 @@ header {
     padding: 0; }
     .main-menu ul li {
       display: inline-block; }
-      .main-menu ul li ul.yoyo {
-        display: block; }
       .main-menu ul li ul.serv {
         -webkit-box-shadow: 0px 0px 6.91px 0.02px rgba(0, 0, 2, 0.4);
                 box-shadow: 0px 0px 6.91px 0.02px rgba(0, 0, 2, 0.4);
@@ -136,6 +137,30 @@ header {
     text-decoration: none;
     color: #000; }
 
+.phone-wrap {
+  margin-top: 5px; }
+  .phone-wrap .phone {
+    font-family: "Exo2Bold";
+    padding: 0px;
+    margin: 0;
+    text-align: right;
+    font-size: 20px;
+    line-height: 15px; }
+    .phone-wrap .phone p {
+      font-family: "PTSans";
+      margin: 0px;
+      font-size: 16.4px;
+      text-decoration: underline; }
+    .phone-wrap .phone a {
+      outline: none;
+      color: #000; }
+    .phone-wrap .phone a:hover {
+      color: #7d919e;
+      text-decoration: underline; }
+    .phone-wrap .phone .fa-mobile {
+      font-size: 19px;
+      margin-right: 5px; }
+
 .head {
   position: relative;
   padding: 50px 0; }
@@ -154,7 +179,7 @@ header {
     margin-top: 40px; }
     .content-left .bullets p {
       font-family: "BebasNeueRegular";
-      font-size: 20px;
+      font-size: 21px;
       padding: 3px 0px;
       margin: 0px; }
     .content-left .bullets .fa-check-square-o {
@@ -611,6 +636,14 @@ footer .phone-wrap {
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
+  .main-footer .main-mnu {
+    position: relative;
+    margin-right: -17px;
+    margin-bottom: 25px; }
+  .triangles-container .tc-item {
+    margin-bottom: 15px; }
+    .triangles-container .tc-item:first-child {
+      margin-left: -40px; }
   .main-mnu {
     display: none;
     float: right;
@@ -645,29 +678,9 @@ footer .phone-wrap {
       .main-mnu ul a:hover {
         background-color: #273646;
         text-decoration: none; }
-  .phone-wrap {
-    margin-top: 5px; }
-    .phone-wrap .phone {
-      font-family: "Exo2Bold";
-      padding: 0px;
-      margin: 0;
-      text-align: right;
-      font-size: 20px;
-      line-height: 15px; }
-      .phone-wrap .phone p {
-        font-family: "PTSans";
-        margin: 0px;
-        font-size: 16.4px;
-        text-decoration: underline; }
-      .phone-wrap .phone a {
-        outline: none;
-        color: #000; }
-      .phone-wrap .phone a:hover {
-        color: #7d919e;
-        text-decoration: underline; }
-      .phone-wrap .phone .fa-mobile {
-        font-size: 19px;
-        margin-right: 5px; }
+  .phone {
+    padding-right: 52px;
+    display: none; }
   .s3-img-wrap {
     margin-left: 82px; } }
 
@@ -750,88 +763,24 @@ footer .phone-wrap {
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
-  .logo-wrap {
-    width: 100%; }
-  .logo {
-    position: relative;
-    margin: auto;
-    display: block;
-    margin: 0;
-    padding: 0;
-    text-align: center; }
-    .logo img {
-      margin: auto;
-      padding: 0;
-      height: 10%;
-      width: 10%; }
-  .top-menu {
-    height: auto; }
-  .main-menu {
-    margin-top: 20px; }
-    .main-menu li {
-      display: block; }
-      .main-menu li a {
-        z-index: 55; }
-    .main-menu ul li {
-      display: block;
-      padding: 5px 0;
-      margin: auto;
-      text-align: center;
-      font-size: 15px; }
-      .main-menu ul li ul.serv {
-        display: none;
-        -webkit-box-shadow: none;
-                box-shadow: none;
-        opacity: 1;
-        visibility: visible;
-        position: static;
-        padding: 0;
-        margin: 0;
-        z-index: 10;
-        width: 100%; }
-        .main-menu ul li ul.serv li {
-          background-color: inherit;
-          padding: 5px 0;
-          font-size: 12px; }
-  .phone-wrap {
-    margin: 15px 0; }
-    .phone-wrap .phone {
-      text-align: center;
-      font-size: 20px;
-      line-height: 15px; }
-      .phone-wrap .phone p {
-        font-family: "PTSans";
-        margin: 0px;
-        font-size: 16.4px;
-        text-decoration: underline; }
-      .phone-wrap .phone a {
-        outline: none;
-        color: #000; }
-      .phone-wrap .phone a:hover {
-        color: #7d919e;
-        text-decoration: underline; }
-      .phone-wrap .phone .fa-mobile {
-        font-size: 19px;
-        margin-right: 5px; }
-  .content-left {
-    margin-top: 10px; }
-    .content-left h1 {
-      text-align: center;
-      font-size: 30px; }
-    .content-left .bullets {
-      margin-top: 30px; }
-      .content-left .bullets p {
-        font-family: "BebasNeueRegular";
-        font-size: 16px;
-        padding: 3px 0px;
-        margin-left: 5px; }
-      .content-left .bullets .fa-check-square-o {
-        font-size: 19px;
-        margin-right: 3px; }
-  .content-right {
-    display: none; }
-  .butt {
-    margin: 30px auto 0px; } }
+  .slider .owl-controls .owl-nav {
+    top: 8%; }
+  .section_5 .triangles-container .tc-item {
+    margin-left: 0; }
+  .phone-wrap .phone {
+    font-size: 1.125em;
+    line-height: 34px;
+    padding-right: 50px; }
+  .phone-wrap .toggle-mnu {
+    line-height: 34px;
+    margin-top: 8px; }
+  .logo img {
+    width: 70px; }
+  .top-line {
+    padding-top: 25px; }
+  .s2-item-wrap {
+    padding: 0px 10px;
+    width: 140px; } }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {
