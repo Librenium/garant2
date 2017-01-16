@@ -1,0 +1,308 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+
+	
+	.main-mnu
+		display: none
+		float: right
+		min-width: 295px
+		text-align: right
+		background-color: #1C242C
+		top: 10px
+		position: relative
+		border-bottom: #111821 4px solid
+		border-top: #232D3B 4px solid
+		position: absolute
+		right: 15px
+		z-index: 2
+		ul
+			li
+				display: block
+				line-height: 0
+				padding: 0
+				&.active
+					a
+						background-color: #273646
+						text-decoration: none
+						font-family: "RalewayBold", $helvetica
+			a
+				display: block
+				line-height: 48px
+				padding: 0 20px
+				background-color: transparent
+				font-size: em(15px)
+				text-transform: uppercase
+				transition: all .5s ease
+				border-bottom: #222C36 1px solid
+				&:hover
+					background-color: #273646
+					text-decoration: none
+
+	.phone-wrap
+		margin-top: 5px
+		.phone
+			font-family: "Exo2Bold" 
+			padding: 0px
+			margin: 0
+			text-align: right
+			font-size: 20px
+			line-height: 15px
+			p
+				font-family: "PTSans"
+				margin: 0px
+				font-size: 16.4px
+				text-decoration: underline
+			a
+				outline: none;
+				text-decoration: 
+				color: #000
+			a:hover
+				color: $main-color
+				text-decoration: underline
+			.fa-mobile
+				font-size: 19px
+				margin-right: 5px 
+
+
+	.s3-img-wrap
+		margin-left: 82px
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+
+	.s8-left
+		.section-head
+			h2
+				text-align: center
+				&::after
+					left: 50%
+					transform: translate(-50%, 0px)
+			p
+				text-align: center
+
+
+	.s3-img-wrap
+		display: none
+
+	.section_3
+		.info-item-wrap .info-item
+			margin: 0 0 30px 0!important
+		.section-content
+			background-image: none
+			min-height: auto
+
+	.s3-img-wrapper
+		display: none
+
+	.section-content
+		.s1-bottom-triangle
+			background-size: cover
+
+	.header-wrap
+		margin-top: 0
+		h1
+			margin-top: 0
+
+	.main-mnu
+		top: 50px
+
+	.top-line
+		min-height: 140px
+	
+	.section_1
+		.s1-bottom
+			.info-item
+				margin: 40px 0
+				height: auto!important
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+
+	.s8-item	
+		margin-bottom: 35px
+	
+	/*Disable Animation on Mobile Devices*/
+	.animated
+		/*CSS transitions*/
+		-o-transition-property: none !important
+		-moz-transition-property: none !important
+		-ms-transition-property: none !important
+		-webkit-transition-property: none !important
+		transition-property: none !important
+		/*CSS transforms*/
+		-o-transform: none !important
+		-moz-transform: none !important
+		-ms-transform: none !important
+		-webkit-transform: none !important
+		transform: none !important
+		/*CSS animations*/
+		-webkit-animation: none !important
+		-moz-animation: none !important
+		-o-animation: none !important
+		-ms-animation: none !important
+		animation: none !important
+		
+	.info-item
+		max-width: 100%
+		margin-top: 20px
+		margin-bottom: 20px
+		border-bottom: #D6DAE0 1px solid
+		padding-left: 0
+		p
+			border: none
+		&:first-child
+			margin-top: 0
+		h4
+			margin-top: 20px
+
+	.s1-bottom
+		.info-item
+			border-color: #546476
+	
+	.info-item-wrap:last-child
+		.info-item
+				border-color: transparent
+
+	.s1-bottom
+		.info-item-wrap:nth-child(2)
+			.info-item
+					margin-top: 45px
+	
+	.section_1
+		.section-content
+			background-position: bottom
+
+	.section_3
+		.section-content
+			padding-top: 10px
+			.info-item
+				border-color: #546476
+				p
+					margin-bottom: 0
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	.logo-wrap
+		width: 100%
+	.logo
+		position: relative
+		margin: auto
+		display: block
+		margin: 0
+		padding: 0
+		text-align: center
+		img
+			margin: auto
+			padding: 0
+			height: 10%
+			width: 10%
+	.top-menu
+		height: auto
+
+	.main-menu
+		margin-top: 20px
+		li
+			display: block
+			a
+				z-index: 55
+		ul
+			li
+				display: block
+				padding: 5px 0
+				margin: auto
+				text-align: center
+				font-size: 15px
+				ul.serv
+					display: none
+					box-shadow: none
+					opacity: 1
+					visibility: visible
+					position: static
+					padding: 0
+					margin: 0
+					z-index: 10
+					width: 100%
+					li
+						background-color: inherit
+						padding: 5px 0
+						font-size: 12px
+	.phone-wrap
+		margin: 15px 0
+		.phone
+			text-align: center
+			font-size: 20px
+			line-height: 15px
+			p
+				font-family: "PTSans"
+				margin: 0px
+				font-size: 16.4px
+				text-decoration: underline
+			a
+				outline: none;
+				text-decoration: 
+				color: #000
+			a:hover
+				color: $main-color
+				text-decoration: underline
+			.fa-mobile
+				font-size: 19px
+				margin-right: 5px 
+
+	.content-left
+		margin-top: 10px
+		h1
+			text-align: center
+			font-size: 30px
+		.bullets
+			margin-top: 30px
+			p
+				font-family: "BebasNeueRegular"
+				font-size: 16px
+				padding: 3px 0px
+				margin-left: 5px
+			.fa-check-square-o
+				font-size: 19px
+				margin-right: 3px
+	.content-right
+		display: none
+
+	.butt
+		margin: 30px auto 0px
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	.main-mnu
+		display: block !important
+
+
